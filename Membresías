@@ -9,33 +9,27 @@ public class P5 {
 		
 		public static void main(String[] agrs) {
 			Scanner read=new Scanner(System.in);
-			int n; String m, d, resp;
-			
-			System.out.println("Buenos días, ¿Cuantod artículos quiere comprar?");
-			n=read.nextInt();
-			read.nextLine();
-			
+			P5_1 com=new P5_1();
+			int n; String m, d; float precio=0;
 			System.out.println("¿Qué membresia tiene?");
 			m=read.nextLine();
 			System.out.println("¿Puede escribir qué día es hoy?");
 			d=read.nextLine();
-			System.out.println("¿Cumple años el día de hoy?");
-			resp=read.nextLine();
-			if(resp=="si" || resp=="Si") {
-				System.out.println("Todas sus compras tienen el 50% de descuento por ser su cumpleños");
-				System.out.println("No se aplica descuento de membresía ni de día");
-			}
 			membresia mem=membresia.valueOf(m);
 			
 			switch(mem) {
 			case Plata:
+				
 				break;
 			case Oro:
+				
 				break;
 			case Diamante:
+				
 				break;
 			default:
 				System.out.println("Membresía inválida");
 			}
 		}
 }
+//En proceso de modificación
